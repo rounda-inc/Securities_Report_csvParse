@@ -1,8 +1,8 @@
 # Securities_Report_csvParse
 有価証券報告書のPDFデータをClaudeのモデルを用いてCSVにパースする
 
-# Google Cloud Functionにdeployする場合
-- Google_CloudFunctionRunの中身をそのままDeployする形
+# Cloud Run functionsにdeployする場合
+- Cloud Run functionsの中身をそのままDeployする形
 - Function側のトリガーはHTTPを想定しており、secret managerによる設定キーとの照合プロセスをコード内に記載
   - そのため事前にsecret managerにて事前にシークレットを発行し、デプロイ時に環境変数として与えるようにすること
   - https://console.cloud.google.com/security/secret-manager
